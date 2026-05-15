@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>見積書・請求書作成</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar no-print" id="topbar" hidden>
+  <div class="topbar-inner">
+    <a href="#/" class="brand">
+      <span class="brand-mark">請</span>
+      <span class="brand-text">見積書・請求書作成</span>
+    </a>
+    <nav class="topnav">
+      <a href="#/" data-route="dashboard">ダッシュボード</a>
+      <a href="#/settings" data-route="settings">設定</a>
+      <span class="topnav-user" id="topnav-user"></span>
+      <button class="btn btn-sm" id="btn-logout">ログアウト</button>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div id="view"></div>
+</main>
+
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
