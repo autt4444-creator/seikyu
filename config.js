@@ -24,4 +24,14 @@
 window.APP_CONFIG = {
   SUPABASE_URL: 'YOUR_PROJECT_URL',
   SUPABASE_ANON_KEY: 'YOUR_ANON_KEY',
+
+  // ASP 成果連携テストページ（asp-test.html）用
+  // ASP に入稿する公開ドメイン。例: 'https://g2tesuto.vercel.app'
+  // 空の場合は、現在アクセスしているドメインを使ってテスト URL を生成します。
+  ASP_TEST_PUBLIC_BASE_URL: '',
+  // 例: 'https://asp.example.com/conversion?campaign={campaign}&bId={bId}&param1={param1}'
+  // URL パラメータ名を {campaign} / {bId} / {param1} のように書くと、テスト URL の値で置換されます。
+  ASP_TEST_CONVERSION_URL: '',
+  // GET_PIXEL / GET / POST
+  ASP_TEST_METHOD: 'GET_PIXEL',
 };

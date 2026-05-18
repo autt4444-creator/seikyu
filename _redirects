@@ -1,0 +1,4 @@
+# ASP 成果連携テスト URL
+# 例: /H558ec8Ha0ffaf0N/cl/?bId=859b6df3&param1={AFの値} -> /asp-test.html?bId=859b6df3&param1={AFの値}
+/:campaign/cl/ /asp-test.html 200
+/:campaign/cl /asp-test.html 200
