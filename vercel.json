@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/:campaign/cl/", "destination": "/asp-test.html" },
+    { "source": "/:campaign/cl", "destination": "/asp-test.html" }
+  ]
+}

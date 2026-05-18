@@ -366,7 +366,7 @@ label { display: block; font-size: 12px; font-weight: 600; color: var(--text); m
 label .req { color: var(--danger); margin-left: 3px; font-weight: normal; }
 
 input[type=text], input[type=email], input[type=tel], input[type=number],
-input[type=password], input[type=date], textarea, select {
+input[type=password], input[type=date], input[type=url], textarea, select {
   width: 100%;
   padding: 8px 10px;
   border: 1px solid var(--border-strong);
@@ -690,4 +690,51 @@ a.link:hover { text-decoration: underline; }
   .main { padding: 0 !important; max-width: none; }
   .pdf-page { box-shadow: none; margin: 0; padding: 12mm 12mm; width: auto; min-height: auto; }
   @page { size: A4; margin: 0; }
+}
+
+/* ============ ASP conversion test ============ */
+.asp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-color: rgba(37, 99, 235, 0.25);
+  background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+}
+
+.asp-eyebrow {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.asp-url {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.btn-lg {
+  padding: 12px 18px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.break-all { overflow-wrap: anywhere; word-break: break-all; }
+.empty.compact { padding: 24px 12px; }
+
+@media (max-width: 720px) {
+  .asp-hero { align-items: stretch; flex-direction: column; }
+  .btn-lg { width: 100%; }
+}
+
+.asp-generated-row input[readonly] {
+  background: #fafbfc;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@media (max-width: 720px) {
+  .asp-generated-row { align-items: stretch; flex-direction: column; }
 }
